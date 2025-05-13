@@ -19,7 +19,6 @@ def init_config():
     config = get_config()
     bindir.joinpath('conf/nginx.conf').write_text(encoding='utf8', data=config)
 
-    bindir.joinpath('logs').mkdir(exist_ok=True)
 
 
 def main():
