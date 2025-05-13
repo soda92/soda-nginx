@@ -46,7 +46,7 @@ wheels = [
 
 [[package]]
 name = "soda-nginx"
-version = "2025.5.13.0"
+version = "2025.5.13.1"
 source = { editable = "." }
 dependencies = [
     { name = "sodatools" },
