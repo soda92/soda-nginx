@@ -1,6 +1,6 @@
 [project]
 name = "soda-nginx"
-version = "2025.5.13.1"
+version = "2025.5.13.2"
 description = "dev nginx server via pip (Windows only)"
 readme = "README.md"
 requires-python = ">=3.11"
