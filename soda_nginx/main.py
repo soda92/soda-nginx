@@ -1,5 +1,4 @@
 from sodatools import Path, CD, str_path
-import subprocess
 import sys
 import os
 
@@ -31,7 +30,13 @@ def main():
     if len(sys.argv) == 1:
         init_config()
         # sys.argv.extend(["-g", "daemon off; error_log stderr info;"])
-    with CD(bindir):
+        with CD(bindir):
+            from .run_nginx import ai_run_nginx
+
+            ai_run_nginx()
+    else:
+        import subprocess
+
         args = [bindir / 'nginx.exe']
         args.extend(sys.argv[1:])
         try:
