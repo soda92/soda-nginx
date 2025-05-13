@@ -1,6 +1,6 @@
 [project]
 name = "soda-nginx"
-version = "2025.5.13.3"
+version = "2025.5.13.4"
 description = "dev nginx server via pip (Windows only)"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -17,7 +17,7 @@ build-backend = "hatchling.build"
 ignore-vcs = true
 packages = ["soda_nginx", "soda_nginx_bin"]
 # include = ["*.sqlite3"]
-exclude = ["__pycache__", "*.pyc", "*.log"]
+exclude = ["__pycache__", "*.pyc", "logs", "temp"]
 
 [tool.hatch.build.targets.wheel]
 ignore-vcs = true

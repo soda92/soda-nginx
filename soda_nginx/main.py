@@ -19,6 +19,12 @@ def init_config():
     config = get_config()
     bindir.joinpath('conf/nginx.conf').write_text(encoding='utf8', data=config)
 
+    bindir.joinpath('logs').mkdir(exist_ok=True)
+    bindir.joinpath('temp/client_body_temp').mkdir(exist_ok=True, parents=True)
+    bindir.joinpath('temp/proxy_temp').mkdir(exist_ok=True, parents=True)
+    bindir.joinpath('temp/fastcgi_temp').mkdir(exist_ok=True, parents=True)
+    bindir.joinpath('temp/scgi_temp').mkdir(exist_ok=True, parents=True)
+    bindir.joinpath('temp/uwsgi_temp').mkdir(exist_ok=True, parents=True)
 
 
 def main():
